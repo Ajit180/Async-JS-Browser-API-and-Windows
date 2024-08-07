@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AJAX Request Example</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://jsonplaceholder.typicode.com/users', true);
+
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                const users = JSON.parse(xhr.responseText);
+                const outputDiv = document.getElementById('output');
+                users.forEach(user => { 
+                    console.log(user);
+                    console.log(user.name); // Log to console
+                    const p = document.createElement('p');
+                    p.textContent = user.name;
+                    outputDiv.appendChild(p); // Display in browser
+                });
+            }
+        };
+
+        xhr.send();
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+
+### Q5. List and briefly explain some common Browser APIs available to JavaScript developers.
+
+- DOM API: Provides methods to interact with the Document Object Model, enabling manipulation of HTML and CSS.
+- Fetch API: Modern interface for making HTTP requests, simpler and more powerful than XMLHttpRequest.
+- Geolocation API: Allows web applications to access the geographical location of the device.
+- Canvas API: Enables drawing graphics and animations on a web page via the `<canvas>` element.
+- Web Storage API: Includes `localStorage` and `sessionStorage` for storing data in the browser.
+- WebSocket API: Provides a way to open a constant connection to a server, enabling real-time communication.
+- Service Workers API: Allows background processing, caching, and handling of network requests for progressive web apps.

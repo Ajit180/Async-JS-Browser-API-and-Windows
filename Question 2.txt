@@ -1,0 +1,15 @@
+### Q2. Write a JavaScript program to make an AJAX request using the XMLHttpRequest object to fetch data from a remote API and log a list of user names from the response to the browser console and output.
+
+```javascript
+const xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://jsonplaceholder.typicode.com/users', true);
+
+xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+        const users = JSON.parse(xhr.responseText);
+        users.forEach(user => console.log(user.name));
+    }
+};
+
+xhr.send();
+```

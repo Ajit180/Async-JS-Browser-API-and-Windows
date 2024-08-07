@@ -1,0 +1,10 @@
+### Q4. Compare Promises to callbacks and discuss why Promises are preferred for managing asynchronous code.
+
+Callbacks are functions passed as arguments to other functions, to be executed after the completion of certain tasks. However, they can lead to "callback hell" where callbacks are nested within other callbacks making code hard to read and maintain.
+
+Promises provide a more readable and manageable way to handle asynchronous operations. They have three states: `pending`, `fulfilled`, and `rejected`. 
+
+Advantages of Promises:
+- Chaining: Promises allow chaining of operations using `.then()`, making the code more readable.
+- Error Handling: Promises provide a `.catch()` method for better error handling.
+- Avoiding Callback Hell: Promises can be used to avoid deeply nested callbacks, improving code readability.
